@@ -1,0 +1,213 @@
+/* src/styles/Sidebar.css */
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  height: calc(100vh - 40px); /* Subtract margin from height */
+  position: fixed;
+  top: 20px; /* Add top margin */
+  left: 20px; /* Add left margin */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  color: #ecf0f1;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: rgba(236, 240, 241, 0.1);
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar-menu li {
+  display: flex;
+  flex-direction: column; /* Changed to column to accommodate submenu */
+  padding: 0; /* Remove padding from li, apply to menu-item-content */
+  color: #ecf0f1;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 8px 0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Style for the menu item content (icon, text, and dropdown arrow) */
+.menu-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px; /* Moved padding from li to here */
+  border-radius: 10px; /* Apply border-radius to the content */
+}
+
+/* Style for the left side (icon and text) */
+.menu-item-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the Link inside menu-item-left (e.g., Dashboard) */
+.menu-item-left a {
+  color: #ecf0f1; /* Match the sidebar text color */
+  text-decoration: none; /* Remove the default underline */
+  transition: color 0.3s ease;
+}
+
+.menu-item-left a:hover {
+  color: #ffffff; /* Slightly brighter on hover for better UX */
+}
+
+.menu-item-left svg {
+  min-width: 18px;
+  margin-right: 12px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Style for the dropdown arrow */
+.menu-item-right {
+  display: flex;
+  align-items: center;
+  color: #ecf0f1;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.menu-item-right:hover {
+  opacity: 1;
+}
+
+/* Style for the submenu */
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #34495e; /* Slightly lighter background for submenu */
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Style for submenu items */
+.submenu li {
+  padding: 10px 15px 10px 40px; /* Indent submenu items */
+  font-size: 14px;
+  color: #bdc3c7; /* Lighter text color for submenu items */
+  margin: 0; /* Remove margin to keep submenu compact */
+  border-radius: 8px;
+}
+
+/* Style for the Link inside submenu items */
+.submenu li a {
+  color: #bdc3c7; /* Match the submenu text color */
+  text-decoration: none; /* Remove the default underline */
+  display: block; /* Ensure the link takes up the full clickable area */
+  transition: color 0.3s ease;
+}
+
+.submenu li a:hover {
+  color: #ecf0f1; /* Slightly brighter on hover to match the sidebar's hover effect */
+}
+
+.submenu li:hover {
+  background: rgba(236, 240, 241, 0.1);
+  transform: translateX(5px); /* Match the hover effect of main menu */
+}
+
+/* Collapsed state adjustments */
+.sidebar.collapsed .menu-item-content {
+  justify-content: center;
+  padding: 12px;
+}
+
+.sidebar.collapsed .menu-item-left span,
+.sidebar.collapsed .menu-item-left a {
+  display: none;
+}
+
+.sidebar.collapsed .menu-item-left svg {
+  margin-right: 0;
+  font-size: 20px;
+}
+
+.sidebar.collapsed .menu-item-right,
+.sidebar.collapsed .submenu {
+  display: none; /* Hide dropdown arrow and submenu when collapsed */
+}
+
+/* Hover effect for menu items */
+.sidebar-menu li:hover .menu-item-content {
+  background: rgba(236, 240, 241, 0.1);
+  transform: translateX(5px); /* Apply transform to the content */
+}
+
+/* Active state for menu items */
+.sidebar-menu li.active .menu-item-content {
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.sidebar-menu li.active .menu-item-content::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 70%;
+  background: #e74c3c;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Add a subtle gradient overlay */
+.sidebar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(44, 62, 80, 0) 0%, rgba(44, 62, 80, 0.8) 100%);
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+/* Update App.css margin for main content */
+.main-content {
+  margin-left: 270px; /* Reduced from 290px */
+  padding: 20px;
+  transition: all 0.3s ease;
+  width: calc(100% - 270px);
+}
+
+.main-content.collapsed {
+  margin-left: 100px; /* Reduced from 120px */
+  width: calc(100% - 100px);
+}

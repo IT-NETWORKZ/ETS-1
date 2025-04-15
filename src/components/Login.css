@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Info Bar */
+.top-info-bar {
+  background-color: #0d1b29;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  font-size: 20px;
+  color: #f4f6f7;
+}
+
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white!important;
+  border-bottom: 2px solid #eee;
+  padding: 0px 40px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Nav Container */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  padding: 10px 0; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  min-width: 1300px;
+  width: 95%;
+  margin: 40px auto;
+  padding: 0 40px;
+  min-height: 600px;
+}
+
+.clients-section {
+  flex: 1;
+  min-width: 600px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 600px;
+}
+
+/* Login Section */
+.login-section {
+  min-width: 600px;
+  flex: 0 0 500px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 600px;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: rgb(54, 115, 54);
+  text-decoration: none;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Full-Screen Login Container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  width: 200%;
+  min-width: 500px;
+  
+  background: linear-gradient(to right, #f7f7f7, #ffffff);
+}
+
+/* Tab Buttons */
+.tabs {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #f1f1f1;
+}
+
+.tabs button {
+  padding: 7px 20px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabs button.active {
+  background: rgb(54, 115, 54);
+  color: white;
+  font-size: 15px;
+}
+
+/* Login Box */
+.login-box {
+  background: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  min-width: 500px;
+  text-align: center;
+}
+
+/* Headings */
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.login-box label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+/* Input Fields */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Checkbox Container */
+.checkbox-container {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  gap: 8px; /* Adjusts spacing between checkbox and text */
+}
+
+/* Checkbox */
+.checkbox-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* Checkbox Label */
+.checkbox-container label {
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  margin: 0;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* Override for checkbox label inside login-box */
+.login-box .checkbox-container label {
+  display: inline-block; /* Ensure inline display */
+  margin: 0;             /* Remove unwanted margins */
+  font-size: 16px;
+  cursor: pointer;
+  line-height: normal;   /* Adjust line-height as needed */
+}
+
+/* Login Button */
+.login-box button {
+  width: 20%;
+  padding: 7px;
+  background: rgb(54, 115, 54);
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: rgb(54, 115, 54);
+}
+
+/* Links */
+.login-box a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #002147;
+  text-decoration: none;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+/* Input Field Container */
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: white;
+  width: 100%;
+}
+
+/* Input Field */
+.input-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Icons */
+.input-icon {
+  color: #666;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.email-icon {
+  margin-right: 5px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.phone-icon {
+  margin: 0 5px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .info-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .demo-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    padding: 40px 0;
+  }
+
+  .clients-section, 
+  .login-section {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+/* Update the container styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: calc(80vh - 60px);
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  gap: 40px;
+  padding: 40px 0;
+  margin-top: -0.5%;
+}
+
+/* Update the clients section styles */
+.clients-section {
+  flex: 0.3; /* Takes up 40% of the container width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  flex-direction: column;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Update the login section styles */
+.login-section {
+  flex: 0.7;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding-top: 6%;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px; /* Prevent it from being too wide */
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-icon {
+  margin-right: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.demo-button {
+  background-color: #ffc107;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.demo-button:hover {
+  background-color: #ffca2c;
+}
+
+a {
+  cursor: pointer;
+  color: inherit; /* Ensure it inherits the default color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: green; /* Change color to green on hover */
+}

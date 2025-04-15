@@ -1,0 +1,34 @@
+.remcontent{
+    height: 100%;
+    /* margin-left: 300px; */
+    background-color: rgb(245, 242, 242);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5px;
+    
+
+}
+.reponsive-content{
+    height: 100%;
+    margin-left: 60px;
+    background-color: rgb(245, 242, 242);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+
+
+
+@media screen and (max-width:910px){
+    .remcontent{
+      margin-left:0px;
+     height: calc(100% - 20px)
+      
+    }
+    .reponsive-content{
+        margin-left: 0;
+    }
+  }
+ 

@@ -1,0 +1,84 @@
+/* styles/Navbar.css (unchanged) */
+.navbarr {
+  position: fixed;
+  top: 0px;
+  width: 85%;
+  background: #2c3e50;
+  padding: 10px 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  /* margin: 0 20px; */
+  transition: all 0.3s ease;
+  z-index: 100;
+  /* margin-right: 46px; */
+  color: white;
+  /* margin-left: 30px;
+  }
+
+  .navbar-items {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+
+  .candidate-id {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* padding: 6px 12px; */
+    /* background: rgba(255, 255, 255, 0.1); */
+  
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  
+  
+  .navbar-logo h4 {
+    color: #ffffff;
+    margin: 0;
+    /* font-size: 20px; */
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .user-icon {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .user-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 7px;
+  }
+  
+  .user-info:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .main-content.collapsed .navbar {
+    padding-left: 1rem;
+  }
+
+  h4{
+    color: #ffffff;
+  }
+
+
+  

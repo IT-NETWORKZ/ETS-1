@@ -1,0 +1,108 @@
+/* Container for the form */
+.add-new-candidate-form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+/* Title for the form */
+.add-new-candidate-form-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgb(246, 246, 246);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Style for individual form elements */
+.add-new-candidate-form .add-new-candidate-form-group {
+  margin-bottom: 20px;
+}
+
+.add-new-candidate-form .add-new-candidate-form-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Style for input fields */
+.add-new-candidate-input-field {
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  transition: border 0.3s;
+}
+
+/* Focus effect for input fields */
+.add-new-candidate-input-field:focus {
+  border-color: #1f2122;
+}
+
+/* Star icon for required fields */
+.required-star {
+  color: red;
+}
+
+/* Gender radio buttons */
+.add-new-candidate-gender-div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.add-new-candidate-gender-div .form-check {
+  margin: 0;
+}
+
+/* Button container for Submit button */
+.add-new-candidate-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Style for the Submit button */
+.add-new-candidate-submit-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the Submit button */
+.add-new-candidate-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .add-new-candidate-form-container {
+      padding: 15px;
+  }
+
+  .add-new-candidate-form-title {
+      font-size: 24px;
+  }
+
+  .add-new-candidate-form .add-new-candidate-form-group {
+      margin-bottom: 15px;
+  }
+
+  .add-new-candidate-gender-div {
+      justify-content: flex-start;
+  }
+
+  .add-new-candidate-submit-btn {
+      width: 50%;
+      padding: 14px;
+  }
+}

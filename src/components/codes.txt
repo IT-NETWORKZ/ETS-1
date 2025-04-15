@@ -1,0 +1,70 @@
+   <div className="login-container">
+        {/* Tabs */}
+        <div className="tabs">
+          <button
+            className={activeTab === "candidate" ? "active" : ""}
+            onClick={() => setActiveTab("candidate")}
+          >
+            Candidate Login
+          </button>
+          <button
+            className={activeTab === "admin" ? "active" : ""}
+            onClick={() => setActiveTab("admin")}
+          >
+            Admin Login
+          </button>
+        </div>
+
+        {/* Login Form */}
+        <form className="login-box" onSubmit={handleSubmit}>
+          <h2>{activeTab === "candidate" ? "Candidate Login" : "Admin Login"}</h2>
+
+          {/* Email Field with Icon */}
+          <div className="input-container">
+            <FaUser className="input-icon" />
+            <input
+              type="email"
+              placeholder={`Enter ${activeTab} email`}
+              required
+              value={activeTab === "candidate" ? candidateEmail : adminEmail}
+              onChange={(e) =>
+                activeTab === "candidate"
+                  ? setCandidateEmail(e.target.value)
+                  : setAdminEmail(e.target.value)
+              }
+            />
+          </div>
+          {errors.email && <div className="error-message">{errors.email}</div>}
+
+          {/* Password Field with Icon */}
+          <div className="input-container">
+            <FaLock className="input-icon" />
+            <input
+              type="password"
+              placeholder="Enter your password"
+              required
+              value={activeTab === "candidate" ? candidatePassword : adminPassword}
+              onChange={(e) =>
+                activeTab === "candidate"
+                  ? setCandidatePassword(e.target.value)
+                  : setAdminPassword(e.target.value)
+              }
+            />
+          </div>
+          {errors.password && <div className="error-message">{errors.password}</div>}
+
+          {/* Remember Me Checkbox (Now Aligned Properly) */}
+          <div className="checkbox-container">
+            <input type="checkbox" id="rememberMe" />
+            <label htmlFor="rememberMe">Remember Me</label>
+          </div>
+
+          <button type="submit">LOGIN</button>
+          <a href="#">Forgot Password?</a>
+          <a href="#">
+            {activeTab === "candidate"
+              ? "Register Now (Candidate Access)"
+              : "Register Now (Organization / Institution Access)"}
+          </a>
+        </form>
+      </div>

@@ -1,0 +1,16 @@
+.about-banner {
+    width: 100%;
+    height: auto; /* Allow height to adjust based on image aspect ratio */
+    max-height: 100vh; /* Prevent it from exceeding the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents scrolling issues */
+  }
+  
+  .about-banner img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100vh; /* Prevents it from exceeding the viewport */
+    object-fit: contain; /* Ensures the whole image is visible */
+  }
