@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/ETS-1/static/css/main.a003d794.css",
+    "main.js": "/ETS-1/static/js/main.3300cb0e.js",
+    "static/js/239.5f51e87e.chunk.js": "/ETS-1/static/js/239.5f51e87e.chunk.js",
+    "static/js/977.61be5005.chunk.js": "/ETS-1/static/js/977.61be5005.chunk.js",
+    "static/js/455.b4928ceb.chunk.js": "/ETS-1/static/js/455.b4928ceb.chunk.js",
+    "static/js/453.688850c9.chunk.js": "/ETS-1/static/js/453.688850c9.chunk.js",
+    "static/media/logo1.png": "/ETS-1/static/media/logo1.b2074f57be9688347138.png",
+    "static/media/exam-banner.png": "/ETS-1/static/media/exam-banner.65f8149661b46b859c59.png",
+    "static/media/support-banner.png": "/ETS-1/static/media/support-banner.c414c1f8b77ac0225a8a.png",
+    "static/media/survey-banner.png": "/ETS-1/static/media/survey-banner.a8a1f76606fff1279e90.png",
+    "static/media/forgot-banner.png": "/ETS-1/static/media/forgot-banner.e84674440e492f8f2c08.png",
+    "static/media/male-testimonial.jpeg": "/ETS-1/static/media/male-testimonial.4f1818a69b4ebc9d2028.jpeg",
+    "static/media/female-testimonial.jpeg": "/ETS-1/static/media/female-testimonial.447ef0a3ef27f64069eb.jpeg",
+    "static/media/John.jpeg": "/ETS-1/static/media/John.d720aaa9d5fc29c9b55f.jpeg",
+    "static/media/Sarah.jpeg": "/ETS-1/static/media/Sarah.a6057d13c0fca4b6c493.jpeg",
+    "static/media/about-banner.jpeg": "/ETS-1/static/media/about-banner.1c8af2c8c8070ae3f432.jpeg",
+    "index.html": "/ETS-1/index.html",
+    "main.a003d794.css.map": "/ETS-1/static/css/main.a003d794.css.map",
+    "main.3300cb0e.js.map": "/ETS-1/static/js/main.3300cb0e.js.map",
+    "239.5f51e87e.chunk.js.map": "/ETS-1/static/js/239.5f51e87e.chunk.js.map",
+    "455.b4928ceb.chunk.js.map": "/ETS-1/static/js/455.b4928ceb.chunk.js.map",
+    "453.688850c9.chunk.js.map": "/ETS-1/static/js/453.688850c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a003d794.css",
+    "static/js/main.3300cb0e.js"
+  ]
+}
