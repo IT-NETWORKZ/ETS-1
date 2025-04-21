@@ -43,7 +43,7 @@ const TechSupport = () => {
             {menuOpen ? <FaTimes /> : <FaBars />}
           </div>
           <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-            <li><a onClick={() => handleNavigation('/')}>HOME</a></li>
+            <li><a onClick={() => handleNavigation('/ETS-1')}>HOME</a></li>
             <li><a onClick={() => handleNavigation('/about')}>ABOUT</a></li>
             <li><a onClick={() => handleNavigation('/tech-support')}>TECH SUPPORT</a></li>
             <li><a onClick={() => handleNavigation('/exam-price')}>EXAM PRICE</a></li>

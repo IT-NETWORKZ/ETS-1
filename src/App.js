@@ -77,7 +77,7 @@ function App() {
     <AuthContext.Provider value={{ isAuthenticated, handleLogin, handleLogout }}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/ETS-1" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/tech-support" element={<TechSupport />} />
